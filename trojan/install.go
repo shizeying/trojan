@@ -56,7 +56,7 @@ func InstallTrojan() {
 		fmt.Println(err)
 	}
 	util.ExecCommand(data)
-	util.OpenPort(443)
+	util.OpenPort(444)
 	util.ExecCommand("systemctl restart trojan")
 	util.ExecCommand("systemctl enable trojan")
 }
@@ -96,7 +96,7 @@ func InstallTls() {
 		if !util.IsExists("/root/.acme.sh/acme.sh") {
 			util.RunWebShell("https://get.acme.sh")
 		}
-		util.OpenPort(80)
+		util.OpenPort(81)
 		util.ExecCommand(fmt.Sprintf("bash /root/.acme.sh/acme.sh --issue -d %s --debug --standalone --keylength ec-256", domain))
 		crtFile := "/root/.acme.sh/" + domain + "_ecc" + "/fullchain.cer"
 		keyFile := "/root/.acme.sh/" + domain + "_ecc" + "/" + domain + ".key"
