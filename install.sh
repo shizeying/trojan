@@ -13,7 +13,7 @@ DOWNLAOD_URL="https://github.com/shizeying/trojan/releases/download/"
 
 VERSION_CHECK="https://api.github.com/repos/shizeying/trojan/releases/latest"
 
-SERVICE_URL="https://raw.githubusercontent.com/shizeying/trojan/master/asset/trojan-web.service"
+SERVICE_URL="https://github.com/shizeying/trojan/blob/v2.7.8/asset/trojan-web.service"
 
 [[ -e /var/lib/trojan-manager ]] && UPDATE=1
 
