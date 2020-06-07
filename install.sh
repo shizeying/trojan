@@ -9,9 +9,9 @@ REMOVE=0
 
 UPDATE=0
 
-DOWNLAOD_URL="https://github.com/Jrohy/trojan/releases/download/"
+DOWNLAOD_URL="https://github.com/shizeying/trojan/releases/download/"
 
-VERSION_CHECK="https://api.github.com/repos/Jrohy/trojan/releases/latest"
+VERSION_CHECK="https://api.github.com/repos/shizeying/trojan/releases/latest"
 
 SERVICE_URL="https://raw.githubusercontent.com/Jrohy/trojan/master/asset/trojan-web.service"
 
